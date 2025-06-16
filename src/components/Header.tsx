@@ -20,7 +20,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="text-2xl font-playfair font-semibold text-stone-900">
-            Rafanelli Events
+            SKO Consultancy
           </div>
 
           {/* Desktop Navigation */}

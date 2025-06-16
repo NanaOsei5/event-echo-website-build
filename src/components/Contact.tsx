@@ -9,22 +9,22 @@ const Contact = () => {
     {
       icon: MapPin,
       title: 'Visit Us',
-      details: ['123 Elegant Avenue', 'Boston, MA 02116'],
+      details: ['East Legon, Accra', 'Greater Accra Region, Ghana'],
     },
     {
       icon: Phone,
       title: 'Call Us',
-      details: ['(617) 555-0123', 'Mon-Fri 9AM-6PM'],
+      details: ['+233 24 123 4567', 'Mon-Fri 8AM-6PM'],
     },
     {
       icon: Mail,
       title: 'Email Us',
-      details: ['hello@rafanellievents.com', 'events@rafanellievents.com'],
+      details: ['info@skoconsultancy.com', 'events@skoconsultancy.com'],
     },
     {
       icon: Clock,
       title: 'Business Hours',
-      details: ['Mon-Fri: 9AM-6PM', 'Sat: 10AM-4PM'],
+      details: ['Mon-Fri: 8AM-6PM', 'Sat: 9AM-3PM'],
     },
   ];
 
@@ -33,11 +33,11 @@ const Contact = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-playfair font-bold text-stone-900 mb-6">
-            Let's Create Something
-            <span className="text-accent block">Beautiful Together</span>
+            Let's Plan Your Next
+            <span className="text-accent block">Celebration Together</span>
           </h2>
           <p className="text-xl text-stone-600 max-w-3xl mx-auto font-inter leading-relaxed">
-            Ready to start planning your extraordinary event? We'd love to hear about your vision and bring it to life.
+            Ready to create an unforgettable event that celebrates your unique story? We're here to make your vision come to life.
           </p>
         </div>
 
@@ -76,7 +76,7 @@ const Contact = () => {
                     <label className="block text-sm font-inter font-medium text-stone-700 mb-2">
                       Phone
                     </label>
-                    <Input placeholder="(555) 123-4567" className="border-stone-300" />
+                    <Input placeholder="+233 24 123 4567" className="border-stone-300" />
                   </div>
                 </div>
                 
@@ -84,7 +84,7 @@ const Contact = () => {
                   <label className="block text-sm font-inter font-medium text-stone-700 mb-2">
                     Event Type
                   </label>
-                  <Input placeholder="Wedding, Corporate Event, Social Celebration..." className="border-stone-300" />
+                  <Input placeholder="Traditional Wedding, Corporate Event, Cultural Celebration..." className="border-stone-300" />
                 </div>
                 
                 <div>
@@ -92,7 +92,7 @@ const Contact = () => {
                     Tell us about your vision
                   </label>
                   <Textarea 
-                    placeholder="Describe your dream event, preferred dates, guest count, and any special requirements..."
+                    placeholder="Describe your dream event, preferred dates, guest count, cultural elements, and any special requirements..."
                     rows={5}
                     className="border-stone-300"
                   />

@@ -6,23 +6,23 @@ const Services = () => {
   const services = [
     {
       icon: Heart,
-      title: 'Wedding Planning',
-      description: 'From intimate ceremonies to grand celebrations, we craft your perfect day with every detail reflecting your unique love story.',
+      title: 'Traditional Weddings',
+      description: 'Authentic Ghanaian wedding ceremonies blending rich traditions with modern elegance, honoring your cultural heritage.',
     },
     {
       icon: Users,
       title: 'Corporate Events',
-      description: 'Elevate your brand with sophisticated corporate gatherings that impress clients and inspire teams.',
+      description: 'Professional business events, conferences, and corporate celebrations that reflect Ghana\'s business excellence.',
     },
     {
       icon: Sparkles,
-      title: 'Social Celebrations',
-      description: 'Milestone birthdays, anniversaries, and special occasions deserve extraordinary celebration.',
+      title: 'Cultural Celebrations',
+      description: 'Traditional festivals, naming ceremonies, and cultural events that showcase the beauty of Ghanaian heritage.',
     },
     {
       icon: Calendar,
       title: 'Event Coordination',
-      description: 'Seamless day-of coordination ensuring your event unfolds flawlessly while you enjoy every moment.',
+      description: 'Complete event management from planning to execution, ensuring every detail is perfectly orchestrated.',
     },
   ];
 
@@ -34,7 +34,7 @@ const Services = () => {
             Our Services
           </h2>
           <p className="text-xl text-stone-600 max-w-3xl mx-auto font-inter leading-relaxed">
-            We specialize in creating bespoke experiences that exceed expectations and create lasting memories
+            Specializing in authentic Ghanaian celebrations and modern events that honor tradition while embracing innovation
           </p>
         </div>
 

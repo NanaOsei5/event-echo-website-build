@@ -9,7 +9,7 @@ const Hero = () => {
       <div 
         className="absolute inset-0 bg-gradient-to-r from-stone-900/60 to-stone-900/30"
         style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80')`,
+          backgroundImage: `url('https://images.unsplash.com/photo-1469041797191-50ace28483c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=4752&q=80')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
@@ -18,13 +18,13 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-6">
         <h1 className="text-5xl md:text-7xl font-playfair font-bold mb-6 animate-fade-in">
-          Extraordinary Events,
+          Ghana's Premier Event
           <br />
-          <span className="text-accent">Perfectly Orchestrated</span>
+          <span className="text-accent">Consultancy Firm</span>
         </h1>
         
         <p className="text-xl md:text-2xl font-inter font-light mb-8 max-w-2xl mx-auto leading-relaxed animate-slide-in">
-          Creating unforgettable moments through meticulous planning and unparalleled attention to detail
+          Celebrating Ghanaian culture through exceptional event planning, from traditional ceremonies to modern celebrations
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in">

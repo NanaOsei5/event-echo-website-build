@@ -2,28 +2,28 @@
 const Portfolio = () => {
   const portfolioItems = [
     {
-      image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80',
-      title: 'Elegant Garden Wedding',
-      category: 'Wedding',
-      description: 'A romantic outdoor celebration surrounded by blooming gardens'
-    },
-    {
       image: 'https://images.unsplash.com/photo-1466442929976-97f336a657be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80',
-      title: 'Corporate Gala',
+      title: 'Traditional Kente Wedding',
+      category: 'Traditional Wedding',
+      description: 'A beautiful ceremony celebrating Ghanaian heritage with vibrant kente colors'
+    },
+    {
+      image: 'https://images.unsplash.com/photo-1493962853295-0fd70327578a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=6000&q=80',
+      title: 'Corporate Summit',
       category: 'Corporate',
-      description: 'Sophisticated company milestone celebration'
+      description: 'Professional business conference showcasing Ghana\'s economic growth'
     },
     {
-      image: 'https://images.unsplash.com/photo-1473177104440-ffee2f376098?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80',
-      title: 'Intimate Anniversary',
-      category: 'Social',
-      description: 'A personal celebration of love and commitment'
+      image: 'https://images.unsplash.com/photo-1469041797191-50ace28483c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=4752&q=80',
+      title: 'Cultural Festival',
+      category: 'Cultural Event',
+      description: 'Vibrant celebration of Ghanaian traditions and cultural heritage'
     },
     {
-      image: 'https://images.unsplash.com/photo-1721322800607-8c38375eef04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80',
-      title: 'Luxury Reception',
-      category: 'Wedding',
-      description: 'Opulent ballroom reception with timeless elegance'
+      image: 'https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80',
+      title: 'Naming Ceremony',
+      category: 'Traditional Ceremony',
+      description: 'Sacred naming ceremony honoring new life with traditional blessings'
     },
   ];
 
@@ -35,7 +35,7 @@ const Portfolio = () => {
             Our Portfolio
           </h2>
           <p className="text-xl text-stone-600 max-w-3xl mx-auto font-inter leading-relaxed">
-            Each event tells a unique story. Explore some of our most memorable celebrations
+            Showcasing our finest celebrations across Ghana - from traditional ceremonies to modern events
           </p>
         </div>
 
