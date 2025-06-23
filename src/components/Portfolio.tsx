@@ -73,7 +73,7 @@ const Portfolio = () => {
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 filter grayscale"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 brightness-105 contrast-105 saturate-110"
                 />
                 
                 {/* Gradient overlay */}
