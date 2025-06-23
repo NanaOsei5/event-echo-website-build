@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -32,11 +31,11 @@ const Contact = () => {
     <section id="contact" className="py-20 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-playfair font-bold text-stone-900 mb-6">
+          <h2 className="text-4xl md:text-5xl font-playfair font-bold text-black mb-6">
             Let's Plan Your Next
-            <span className="text-accent block">Celebration Together</span>
+            <span className="text-black block">Celebration Together</span>
           </h2>
-          <p className="text-xl text-stone-600 max-w-3xl mx-auto font-inter leading-relaxed">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto font-inter leading-relaxed">
             Ready to create an unforgettable event that celebrates your unique story? We're here to make your vision come to life.
           </p>
         </div>
@@ -44,8 +43,8 @@ const Contact = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           {/* Contact Form */}
           <div className="lg:col-span-2">
-            <div className="bg-stone-50 rounded-lg p-8">
-              <h3 className="text-2xl font-playfair font-semibold text-stone-900 mb-6">
+            <div className="bg-gray-50 rounded-lg p-8">
+              <h3 className="text-2xl font-playfair font-semibold text-black mb-6">
                 Tell us about your event
               </h3>
               
@@ -98,7 +97,7 @@ const Contact = () => {
                   />
                 </div>
                 
-                <Button size="lg" className="w-full bg-stone-900 hover:bg-stone-800 text-white font-inter">
+                <Button size="lg" className="w-full bg-black hover:bg-gray-800 text-white font-inter">
                   Send Message
                 </Button>
               </form>
@@ -109,15 +108,15 @@ const Contact = () => {
           <div className="space-y-8">
             {contactInfo.map((info, index) => (
               <div key={index} className="flex items-start space-x-4">
-                <div className="p-3 bg-accent/10 rounded-lg">
-                  <info.icon className="h-6 w-6 text-accent" />
+                <div className="p-3 bg-black/10 rounded-lg">
+                  <info.icon className="h-6 w-6 text-black" />
                 </div>
                 <div>
-                  <h4 className="text-lg font-playfair font-semibold text-stone-900 mb-2">
+                  <h4 className="text-lg font-playfair font-semibold text-black mb-2">
                     {info.title}
                   </h4>
                   {info.details.map((detail, idx) => (
-                    <p key={idx} className="text-stone-600 font-inter">
+                    <p key={idx} className="text-gray-600 font-inter">
                       {detail}
                     </p>
                   ))}

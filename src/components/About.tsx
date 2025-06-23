@@ -17,22 +17,22 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-24 bg-gradient-to-br from-white via-stone-50 to-white relative overflow-hidden">
+    <section id="about" className="py-24 bg-gradient-to-br from-white via-gray-50 to-white relative overflow-hidden">
       {/* Background decorative elements */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-accent/10 to-transparent rounded-full blur-3xl" />
-      <div className="absolute bottom-0 left-0 w-80 h-80 bg-gradient-to-tr from-accent/5 to-transparent rounded-full blur-3xl" />
+      <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-black/10 to-transparent rounded-full blur-3xl" />
+      <div className="absolute bottom-0 left-0 w-80 h-80 bg-gradient-to-tr from-black/5 to-transparent rounded-full blur-3xl" />
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center mb-20">
           {/* Content */}
           <div>
-            <div className="inline-flex items-center px-4 py-2 bg-accent/10 rounded-full mb-6">
-              <span className="text-accent font-medium">Our Story</span>
+            <div className="inline-flex items-center px-4 py-2 bg-black/10 rounded-full mb-6">
+              <span className="text-black font-medium">Our Story</span>
             </div>
             
-            <h2 className="text-5xl md:text-6xl font-playfair font-bold text-stone-900 mb-8 leading-tight">
+            <h2 className="text-5xl md:text-6xl font-playfair font-bold text-black mb-8 leading-tight">
               Celebrating Ghana's
-              <span className="block text-accent bg-gradient-to-r from-accent to-yellow-400 bg-clip-text text-transparent">
+              <span className="block text-black bg-gradient-to-r from-black to-gray-600 bg-clip-text text-transparent">
                 Rich Heritage
               </span>
             </h2>
@@ -52,10 +52,10 @@ const About = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 mt-10">
-              <Button size="lg" className="bg-gradient-to-r from-accent to-yellow-400 text-stone-900 hover:from-yellow-400 hover:to-accent font-inter px-8 rounded-full transition-all duration-300 transform hover:scale-105">
+              <Button size="lg" className="bg-black text-white hover:bg-gray-800 font-inter px-8 rounded-full transition-all duration-300 transform hover:scale-105">
                 Our Full Story
               </Button>
-              <Button variant="outline" size="lg" className="border-2 border-stone-300 text-stone-700 hover:bg-stone-50 font-inter px-8 rounded-full">
+              <Button variant="outline" size="lg" className="border-2 border-black text-black hover:bg-black hover:text-white font-inter px-8 rounded-full">
                 Meet Our Team
               </Button>
             </div>
@@ -64,16 +64,16 @@ const About = () => {
           {/* Stats Grid */}
           <div className="grid grid-cols-2 gap-6">
             {stats.map((stat, index) => (
-              <div key={index} className="group text-center p-8 bg-white rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+              <div key={index} className="group text-center p-8 bg-white rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
                 <div className="mb-6 flex justify-center">
-                  <div className="p-4 rounded-2xl bg-gradient-to-br from-accent/20 to-accent/30 group-hover:from-accent/30 group-hover:to-accent/40 transition-all duration-300">
-                    <stat.icon className={`h-8 w-8 ${stat.color}`} />
+                  <div className="p-4 rounded-2xl bg-gradient-to-br from-black/20 to-black/30 group-hover:from-black/30 group-hover:to-black/40 transition-all duration-300">
+                    <stat.icon className="h-8 w-8 text-black" />
                   </div>
                 </div>
-                <div className="text-4xl font-playfair font-bold text-stone-900 mb-2 group-hover:text-accent transition-colors">
+                <div className="text-4xl font-playfair font-bold text-black mb-2 group-hover:text-gray-800 transition-colors">
                   {stat.number}
                 </div>
-                <div className="text-stone-600 font-inter text-sm tracking-wide">
+                <div className="text-gray-600 font-inter text-sm tracking-wide">
                   {stat.label}
                 </div>
               </div>
@@ -82,10 +82,10 @@ const About = () => {
         </div>
 
         {/* Achievements Section */}
-        <div className="bg-gradient-to-r from-stone-900 to-stone-800 rounded-3xl p-12 text-white">
+        <div className="bg-gradient-to-r from-black to-gray-900 rounded-3xl p-12 text-white">
           <div className="text-center mb-12">
             <h3 className="text-3xl font-playfair font-bold mb-4">Recognition & Awards</h3>
-            <p className="text-stone-300 max-w-2xl mx-auto">
+            <p className="text-gray-300 max-w-2xl mx-auto">
               Our commitment to excellence has been recognized by leading organizations across Ghana
             </p>
           </div>
@@ -94,14 +94,14 @@ const About = () => {
             {achievements.map((achievement, index) => (
               <div key={index} className="text-center group">
                 <div className="mb-4 flex justify-center">
-                  <div className="p-4 rounded-2xl bg-accent/20 group-hover:bg-accent/30 transition-colors duration-300">
-                    <achievement.icon className="h-8 w-8 text-accent" />
+                  <div className="p-4 rounded-2xl bg-white/20 group-hover:bg-white/30 transition-colors duration-300">
+                    <achievement.icon className="h-8 w-8 text-white" />
                   </div>
                 </div>
-                <h4 className="text-xl font-playfair font-semibold mb-2 group-hover:text-accent transition-colors">
+                <h4 className="text-xl font-playfair font-semibold mb-2 group-hover:text-gray-300 transition-colors">
                   {achievement.title}
                 </h4>
-                <p className="text-stone-400 text-sm">
+                <p className="text-gray-400 text-sm">
                   {achievement.subtitle}
                 </p>
               </div>
