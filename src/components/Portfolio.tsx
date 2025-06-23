@@ -7,7 +7,7 @@ const Portfolio = () => {
       image: 'https://images.unsplash.com/photo-1466442929976-97f336a657be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80',
       title: 'Royal Kente Wedding',
       category: 'Traditional Wedding',
-      description: 'A magnificent ceremony celebrating Ghanaian heritage with vibrant kente colors and traditional blessings',
+      description: 'Magnificent Ghanaian heritage celebration',
       details: { guests: '350+', location: 'Accra', duration: '3 Days' },
       featured: true
     },
@@ -15,7 +15,7 @@ const Portfolio = () => {
       image: 'https://images.unsplash.com/photo-1493962853295-0fd70327578a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=6000&q=80',
       title: 'Ghana Business Summit',
       category: 'Corporate',
-      description: 'International business conference showcasing Ghana\'s economic growth and opportunities',
+      description: 'International business conference showcase',
       details: { guests: '500+', location: 'Kumasi', duration: '2 Days' },
       featured: false
     },
@@ -23,7 +23,7 @@ const Portfolio = () => {
       image: 'https://images.unsplash.com/photo-1469041797191-50ace28483c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=4752&q=80',
       title: 'Homowo Festival',
       category: 'Cultural Event',
-      description: 'Vibrant celebration of Ghanaian traditions featuring traditional dances, music, and authentic cuisine',
+      description: 'Vibrant celebration of traditions',
       details: { guests: '1000+', location: 'Greater Accra', duration: '1 Day' },
       featured: true
     },
@@ -31,109 +31,119 @@ const Portfolio = () => {
       image: 'https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80',
       title: 'Sacred Naming Ceremony',
       category: 'Traditional Ceremony',
-      description: 'Sacred naming ceremony honoring new life with traditional blessings and family celebrations',
+      description: 'Sacred naming ceremony with blessings',
       details: { guests: '150+', location: 'Cape Coast', duration: '1 Day' },
+      featured: false
+    },
+    {
+      image: 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80',
+      title: 'Modern Celebration',
+      category: 'Contemporary Event',
+      description: 'Elegant modern celebration',
+      details: { guests: '200+', location: 'Takoradi', duration: '2 Days' },
+      featured: false
+    },
+    {
+      image: 'https://images.unsplash.com/photo-1500375592092-40eb2168fd21?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80',
+      title: 'Beach Wedding',
+      category: 'Destination Wedding',
+      description: 'Romantic beachside ceremony',
+      details: { guests: '120+', location: 'Cape Coast', duration: '1 Day' },
       featured: false
     },
   ];
 
   return (
-    <section id="portfolio" className="py-24 bg-white relative overflow-hidden">
-      {/* Background pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `radial-gradient(circle at 1px 1px, rgba(0,0,0,0.3) 1px, transparent 0)`,
-          backgroundSize: '20px 20px'
-        }} />
+    <section id="portfolio" className="py-16 bg-black relative overflow-hidden">
+      {/* Animated background elements */}
+      <div className="absolute inset-0">
+        <div className="absolute top-10 left-10 w-64 h-64 bg-white/5 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-20 right-20 w-80 h-80 bg-white/3 rounded-full blur-3xl animate-pulse delay-1000" />
+        <div className="absolute top-1/2 left-1/4 w-32 h-32 bg-white/10 rounded-full blur-2xl animate-bounce delay-500" />
       </div>
       
       <div className="container mx-auto px-6 relative z-10">
-        <div className="text-center mb-20">
-          <div className="inline-flex items-center px-4 py-2 bg-black/10 rounded-full mb-6">
-            <span className="text-black font-medium">Our Masterpieces</span>
-          </div>
-          <h2 className="text-5xl md:text-6xl font-playfair font-bold text-black mb-8">
-            Celebrated
-            <span className="block text-black">Events</span>
+        <div className="text-center mb-12">
+          <h2 className="text-4xl md:text-5xl font-playfair font-bold text-white mb-4 animate-fade-in">
+            Our Work
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto font-inter leading-relaxed">
-            Showcasing our finest celebrations across Ghana - from traditional ceremonies to modern corporate events
-          </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        {/* Enhanced masonry grid layout */}
+        <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
           {portfolioItems.map((item, index) => (
             <div 
               key={index} 
-              className={`group relative overflow-hidden rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-700 transform hover:-translate-y-2 ${
-                item.featured ? 'lg:col-span-2' : ''
+              className={`group relative overflow-hidden rounded-2xl shadow-2xl hover:shadow-white/20 transition-all duration-700 transform hover:-translate-y-4 hover:rotate-1 break-inside-avoid animate-scale-in ${
+                item.featured ? 'md:col-span-2' : ''
               }`}
+              style={{
+                animationDelay: `${index * 150}ms`
+              }}
             >
-              <div className={`aspect-[16/10] overflow-hidden ${item.featured ? 'lg:aspect-[21/9]' : ''}`}>
+              <div className={`relative overflow-hidden ${
+                index % 3 === 0 ? 'aspect-[4/5]' : 
+                index % 3 === 1 ? 'aspect-[3/4]' : 'aspect-[5/6]'
+              }`}>
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 brightness-105 contrast-105 saturate-110"
+                  className="w-full h-full object-cover transition-all duration-1000 group-hover:scale-125 group-hover:rotate-2 brightness-105 contrast-105 saturate-110 group-hover:brightness-110 group-hover:contrast-110 group-hover:saturate-125"
                 />
                 
-                {/* Gradient overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300" />
+                {/* Multiple overlay effects */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-70 group-hover:opacity-90 transition-all duration-500" />
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 transform translate-x-[-100%] group-hover:translate-x-[100%]" />
                 
-                {/* Content overlay */}
-                <div className="absolute inset-0 p-8 flex flex-col justify-end text-white">
-                  <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                    <div className="flex items-center mb-3">
-                      <span className="px-3 py-1 bg-white text-black rounded-full text-sm font-medium">
+                {/* Animated content overlay */}
+                <div className="absolute inset-0 p-6 flex flex-col justify-end text-white">
+                  <div className="transform translate-y-8 group-hover:translate-y-0 transition-all duration-500">
+                    <div className="flex items-center mb-2 opacity-0 group-hover:opacity-100 transition-all duration-300 delay-100">
+                      <span className="px-2 py-1 bg-white/20 backdrop-blur-sm rounded-full text-xs font-medium animate-fade-in">
                         {item.category}
                       </span>
-                      {item.featured && (
-                        <span className="ml-2 px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full text-xs">
-                          Featured
-                        </span>
-                      )}
                     </div>
                     
-                    <h3 className="text-3xl font-playfair font-bold mb-3 group-hover:text-white transition-colors">
+                    <h3 className="text-xl font-playfair font-bold mb-2 transform translate-x-4 group-hover:translate-x-0 transition-all duration-400">
                       {item.title}
                     </h3>
                     
-                    <p className="text-gray-200 font-inter mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">
+                    <p className="text-sm text-gray-200 mb-3 opacity-0 group-hover:opacity-100 transition-all duration-400 delay-200 transform translate-y-4 group-hover:translate-y-0">
                       {item.description}
                     </p>
                     
-                    <div className="flex items-center space-x-6 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-200">
-                      <div className="flex items-center">
-                        <Users className="w-4 h-4 mr-1" />
+                    <div className="flex items-center space-x-4 text-xs opacity-0 group-hover:opacity-100 transition-all duration-500 delay-300 transform translate-y-6 group-hover:translate-y-0">
+                      <div className="flex items-center animate-slide-in">
+                        <Users className="w-3 h-3 mr-1" />
                         {item.details.guests}
                       </div>
-                      <div className="flex items-center">
-                        <MapPin className="w-4 h-4 mr-1" />
+                      <div className="flex items-center animate-slide-in delay-100">
+                        <MapPin className="w-3 h-3 mr-1" />
                         {item.details.location}
-                      </div>
-                      <div className="flex items-center">
-                        <Calendar className="w-4 h-4 mr-1" />
-                        {item.details.duration}
                       </div>
                     </div>
                   </div>
                   
-                  {/* View project button */}
-                  <div className="absolute top-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <button className="p-3 bg-white/20 backdrop-blur-sm rounded-full hover:bg-white hover:text-black transition-colors">
-                      <ExternalLink className="w-5 h-5" />
+                  {/* Animated view button */}
+                  <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-500 transform scale-0 group-hover:scale-100 rotate-180 group-hover:rotate-0">
+                    <button className="p-2 bg-white/20 backdrop-blur-sm rounded-full hover:bg-white hover:text-black transition-all duration-300 animate-bounce">
+                      <ExternalLink className="w-4 h-4" />
                     </button>
                   </div>
                 </div>
+
+                {/* Animated border effect */}
+                <div className="absolute inset-0 border-2 border-white/0 group-hover:border-white/20 rounded-2xl transition-all duration-500 transform scale-105 group-hover:scale-100" />
               </div>
             </div>
           ))}
         </div>
         
-        {/* View all projects button */}
-        <div className="text-center mt-16">
-          <button className="group bg-black text-white px-8 py-4 rounded-full font-semibold hover:bg-gray-800 transition-all duration-300 transform hover:scale-105">
-            View All Projects
-            <ExternalLink className="inline-block ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+        {/* Minimal CTA */}
+        <div className="text-center mt-12">
+          <button className="group bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition-all duration-300 transform hover:scale-110 animate-pulse hover:animate-none">
+            View More
+            <ExternalLink className="inline-block ml-2 w-4 h-4 group-hover:translate-x-2 group-hover:-translate-y-1 transition-transform duration-300" />
           </button>
         </div>
       </div>
